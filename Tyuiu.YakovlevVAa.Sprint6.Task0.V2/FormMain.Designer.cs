@@ -113,7 +113,7 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task0.V2
             textBoxWrite_YVA.Location = new Point(16, 63);
             textBoxWrite_YVA.Name = "textBoxWrite_YVA";
             textBoxWrite_YVA.Size = new Size(216, 31);
-            textBoxWrite_YVA.TabIndex = 0;
+            textBoxWrite_YVA.TabIndex = 6;
             textBoxWrite_YVA.KeyPress += textBoxWrite_YVA_KeyPress;
             // 
             // groupBoxResult_YVA
@@ -143,6 +143,7 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task0.V2
             textBoxResult_YVA.ReadOnly = true;
             textBoxResult_YVA.Size = new Size(308, 31);
             textBoxResult_YVA.TabIndex = 0;
+            textBoxResult_YVA.TextChanged += buttonStart_YVA_Click;
             // 
             // buttonHelp_YVA
             // 

@@ -13,7 +13,7 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task0.V2
             DataService ds = new DataService();
             try
             {
-                textBoxResult_YVA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxWrite_YVA)));
+                textBoxResult_YVA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxWrite_YVA.Text)));
             }
             catch
             {
@@ -23,7 +23,7 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task0.V2
         }
         private void textBoxWrite_YVA_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58)&&(e.KeyChar != ',')&&(e.KeyChar !=8))
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8))
             {
                 e.Handled = true;
             }
@@ -33,5 +33,6 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task0.V2
         {
             MessageBox.Show("Таск 0 выполнил студент группы ИИПб-24-2 Яковлев Виктор Александрович", "Сообщение");
         }
+
     }
 }

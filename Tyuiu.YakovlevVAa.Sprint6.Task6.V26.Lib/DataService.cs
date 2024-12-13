@@ -15,10 +15,10 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task6.V26.Lib
                 {
                     string[] words = line.Split(' ');
                     if (words.Length > 0) { string lastWord = words[words.Length - 1]; resStr += lastWord+ " "; }
-                    resStr.Trim(' ');
+                    
                 }
             }
-            return resStr;
+            return resStr.Trim();
         }
     }
 }

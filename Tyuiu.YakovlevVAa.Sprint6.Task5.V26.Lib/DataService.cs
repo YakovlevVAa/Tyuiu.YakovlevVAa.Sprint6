@@ -26,7 +26,7 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task5.V26.Lib
                 }
 
             }
-            numsArray = numsArray.Where(val => val%5 == 0).ToArray();
+            numsArray = numsArray.Where(val => Math.Round(val,3)%5 == 0).ToArray();
             return numsArray;
         }
     }

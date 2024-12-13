@@ -14,7 +14,7 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task6.V26.Lib
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] words = line.Split(' ');
-                    if (words.Length > 0) { string lastWord = words[words.Length - 1]; resStr += lastWord+ ""; }
+                    if (words.Length > 0) { string lastWord = words[words.Length - 1]; resStr += lastWord+ " "; }
                 }
             }
             return resStr;

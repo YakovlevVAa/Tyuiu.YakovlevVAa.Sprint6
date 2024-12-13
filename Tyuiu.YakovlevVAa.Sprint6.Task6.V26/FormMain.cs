@@ -14,7 +14,7 @@ namespace Tyuiu.YakovlevVAa.Sprint6.Task6.V26
             openFileDialogTask6_YVA.ShowDialog();
             openFilePath = openFileDialogTask6_YVA.FileName;
             textBoxIn_YVA.Text = File.ReadAllText(openFilePath);
-            groupBoxEnter_YVA.Text = groupBoxEnter_YVA.Text + " " + openFileDialogTask6_YVA.FileName;
+            groupBoxEnter_YVA.Text = groupBoxEnter_YVA.Text + "" + openFileDialogTask6_YVA.FileName;
             buttonStart_YVA.Enabled = true;
         }
         public void buttonStart_Click(object sender, EventArgs e)
